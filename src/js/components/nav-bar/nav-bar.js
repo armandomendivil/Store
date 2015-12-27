@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import CartSummary from './app-cartsummary';
 
 export default class Navbar extends React.Component {
   render() {
@@ -21,6 +22,7 @@ export default class Navbar extends React.Component {
 			                  <Link to="/about" >About</Link>
 			              </li>
 			          </ul>
+			          <div className="navbar-right"> <CartSummary/> </div>
 			      </div>
 			  </div>
 			</nav>
